@@ -12,5 +12,6 @@ class Triangle
       return :isosceles
     when 3
       return :scalene
+    end
   end
 end
