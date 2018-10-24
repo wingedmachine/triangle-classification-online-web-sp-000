@@ -4,7 +4,8 @@ class Triangle
     @sides = [side1, side2, side3].sort
   end
 
-  class TriangleError < StandardError end
+  class TriangleError < StandardError
+  end
 
   def kind
     raise TriangleError if sides[0] <= 0 or sides[0] + sides[1] < sides[2]
